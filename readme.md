@@ -1,4 +1,4 @@
-# HTML -> Hypertext Markup Lenguage
+# HTML -> Hyper Text Markup Lenguage
 
 ## Anatomia de un sitio web
 
