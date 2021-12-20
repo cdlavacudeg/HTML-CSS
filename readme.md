@@ -49,6 +49,7 @@ Semanticamente es mas correcto que usar un div,imagenes con uno pequeña descrip
 
 ### Formularios
 
+#### Input
 ```
 <form action="Link">
     <label for="label1">
@@ -98,3 +99,33 @@ Semanticamente es mas correcto que usar un div,imagenes con uno pequeña descrip
 
 ```
 [Link documentacion input](https://developer.mozilla.org/es/docs/Web/HTML/Element/input)
+
+#### Autocomplete Required
+
+```
+<form action="">
+    <label for="nombre">
+        <span>¿Cual es tu nombre? </span>
+        <input type="text" id="nombre" name="nombre" autocomplete="name" required />
+    </label>
+    
+    <label for="correo">
+        <span>¿Cual es tu correo? </span>
+        <input type="email" id="correo" name="correo" autocomplete="email" required>
+    </label>
+    
+    <label for="pais">
+        <span>¿En que país vives?</span>
+        <input type="text" id="pais" name="pais" autocomplete="country" required>
+    </label>
+    
+    <label for="cp">
+        <span>Código postal: </span>
+        <input type="text" id="cp" name="cp" autocomplete="postal-code" required>
+    </label>
+    <input type="submit">
+</form>
+
+```
+
+[Link documentacion autocomplete](https://developer.mozilla.org/es/docs/Web/HTML/Atributos/autocomplete)
