@@ -46,3 +46,55 @@ Semanticamente es mas correcto que usar un div,imagenes con uno pequeña descrip
     <source src="src4"/>
 </video>
 ```
+
+### Formularios
+
+```
+<form action="Link">
+    <label for="label1">
+        <span>Label 1:</span>
+        <input type="text" id="label1" placeholder="ph" />
+    </label>
+    <label for="label2">
+        <span>Label 2:</span>
+        <input type="date" id="label2"/>
+    </label>
+    <label for="label3">
+        <span>Label 1:</span>
+        <input type="time" id="label3"/>
+    </label>
+</form>
+```
+
+```
+<form>
+        <label for="hora">
+            <span>Hora</span>
+            <input type="time" id="hora" name="hora"/>
+        </label>
+        <label for="dia">
+            <span>Día</span>
+            <input type="date" id="dia" name="dia"/>
+        </label>
+        <label for="semana">
+            <span>Semana</span>
+            <input type="week" id="semana" name="semana"/>
+        </label>
+        <label for="mes">
+            <span>Mes</span>
+            <input type="month" id="mes" name="mes"/>
+        </label>
+        <input type="submit"/>
+</form>
+```
+
+```
+<form action="">
+        <label for="calendario">
+            <input type="datetime-local" id="calendario" name="calendario">
+        </label>
+        <input type="submit"/>
+</form>
+
+```
+[Link documentacion input](https://developer.mozilla.org/es/docs/Web/HTML/Element/input)
