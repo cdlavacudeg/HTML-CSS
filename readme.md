@@ -129,3 +129,23 @@ Semanticamente es mas correcto que usar un div,imagenes con uno pequeña descrip
 ```
 
 [Link documentacion autocomplete](https://developer.mozilla.org/es/docs/Web/HTML/Atributos/autocomplete)
+
+### Select
+
+```
+<input list="cursos">
+<datalist id="cursos">
+    <option value="JS"></option>
+    <option value="PHP"></option>
+    <option value="REACT"></option>
+    <option value="Python"></option>
+</datalist>
+```
+
+### Botones
+
+```
+<input type="submit" value="Texto alternativo"> <!--formularios-->
+<button type="submit">Texto alternativo</button>
+
+```
