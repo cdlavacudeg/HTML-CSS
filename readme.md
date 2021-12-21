@@ -149,3 +149,14 @@ Semanticamente es mas correcto que usar un div,imagenes con uno pequeña descrip
 <button type="submit">Texto alternativo</button>
 
 ```
+
+## Links interesantes
+
+Les comparto unas librerías que, les ayudarán para practicar.
+
+[referencias CSS](https://cssreference.io/)
+[flexbox guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+[HTML](https://www.w3schools.com/html/default.asp)
+
+Un juego:
+[FLEXBOX FROGGY](https://flexboxfroggy.com/#es)
