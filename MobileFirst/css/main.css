@@ -145,22 +145,39 @@ main{
     line-height: 1.6rem;
     color:#757575;
 }
+.main-tables-container{
+    display: flex;
+    height: 370px;
+    overflow-x:scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.main-tables-container::-webkit-scrollbar {
+    background-color: var(--soft-orange);
+    height: 3px;
+  }
+.main-tables-container::-webkit-scrollbar-thumb {
+    background-color: var(--bitcoin-orange);
+  }
+
 
 .main-tables-container .main-currency-table{
+    scroll-snap-align:center ;
     width: 70%;
     min-width: 235px;
     max-width: 500px;
     height: 360px;
-    margin: 0 auto;
+    margin: 0 20px;
     font-family: "Inter",sans-serif;
 }
 
 .main-currency-table .currency-table--title{
+    scroll-snap-align:center ;
     font-size: 1.8rem;
     font-weight: bold;
     line-height: 2.3rem;
     color:var(--bitcoin-orange);
-    margin: 10px auto;
+    margin: 10px 20px;
     text-align: center;
 }
 
