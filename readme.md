@@ -163,3 +163,56 @@ Un juego:
 
 [Scroll bar styling](https://ed.team/blog/personaliza-el-scroll-de-tu-web-solo-con-css)  
 [Compatibilidad con navegadores](https://caniuse.com/)
+
+# CSS Grid y flexbox
+
+## Flujo normal del documento
+
+- `display: grid` -> `display: block(externo) grid(interno)`
+- `display: inline-flex` -> interno comportamineto flex y externo inline.
+
+## Formato de contexto de bloque (BFC)
+
+Es un mini layout entre otra estructura o layout. Overflow:auto, position:absolute, position:fixed, display:inline-block/display:flow-root.
+
+## Diferencias de CSS Grid y Flexbox
+
+- Flexbox: distribuir el espacio entre los ítems y mejorar la alineación. Es unidireccional.´
+- CSS Grid: alineación bidireccional.
+
+### Flexbox
+
+Container:
+- display
+- flex-direction
+- flex-wrap
+- flex-flow
+- justify-content
+- align-items
+- align-content
+
+Items:
+- order
+- flex-grow
+- flex-shrink
+- flex-basis
+- flex
+- align-self
+
+### CSS grid
+
+Container:
+- display
+- grid-template
+- gap
+- justify-items
+- align-items
+- justify-content
+- align-content
+
+Items:
+- grid-column
+- grid-row
+- grid-area
+- justify-self
+- align-self
