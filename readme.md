@@ -163,6 +163,7 @@ Un juego:
 
 [Scroll bar styling](https://ed.team/blog/personaliza-el-scroll-de-tu-web-solo-con-css)  
 [Compatibilidad con navegadores](https://caniuse.com/)
+[Layouts](https://gridbyexample.com/patterns/)
 
 # CSS Grid y flexbox
 
@@ -216,3 +217,89 @@ Items:
 - grid-area
 - justify-self
 - align-self
+
+## Oneline -Layouts
+[Link de los recursos](https://web.dev/one-line-layouts/)
+
+- super-centered:
+```
+.parent {
+  display: grid;
+  place-items: center;
+}
+```
+- The Deconstructed Pancake:
+```
+.parent {
+  display: flex;
+}
+
+.child {
+  flex: 0 1 150px;//flex: 1 1 150px;
+}
+```
+
+- Sidebar Says:
+
+```
+.parent {
+  display: grid;
+  grid-template-columns: minmax(150px, 25%) 1fr;
+}
+```
+
+- Pancake Stack:
+
+```
+.parent {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+```
+
+- Classic Holy Grail Layout:
+```
+.parent {
+  display: grid;
+  grid-template: auto 1fr auto / auto 1fr auto;
+}
+```
+
+- 12-Span Grid:
+
+```
+.parent {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.child-span-12 {
+  grid-column: 1 / 13;
+}
+
+```
+- RAM (Repeat, Auto, MinMax):
+
+```
+.parent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+```
+
+```
+.parent {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+```
+
+- Line Up:
+
+```
+.parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+```
