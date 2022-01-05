@@ -164,7 +164,10 @@ Un juego:
 [Scroll bar styling](https://ed.team/blog/personaliza-el-scroll-de-tu-web-solo-con-css)  
 [Compatibilidad con navegadores](https://caniuse.com/)
 [Layouts](https://gridbyexample.com/patterns/)
-
+[Design Guide](https://polaris.shopify.com/design/design)
+[Neumorphismo](https://neumorphism.io/#e67070)
+[CSS repositorio Platzi](https://github.com/platzi/CSS2020)
+[Wireframes](https://app.moqups.com//#)
 # CSS Grid y flexbox
 
 ## Flujo normal del documento
@@ -303,3 +306,12 @@ Items:
   justify-content: space-between;
 }
 ```
+## Figma
+Algunos comandos básicos para ahorrar tiempo en Figma:
+
+- Para crear un Frame solo oprime la tecla F.
+- Para crear un rectángulo solo oprime la tecla R (si deseas un cuadrado perfecto oprime las teclas Shift + Option mientras arrastras el mouse, de esta forma crear un cuadrado en vez de un rectángulo)
+- Para crear un circulo perfecto oprime la tecla O
+- Para alinear un elemento en el centro del FRAME (de todo el frame, no del contenedor) oprime Option + H.
+- Para alinear en el centro del Frame de forma vertical oprime Option + V
+- Si desea cambiar el nombre de varios elementos al tiempo (Si te das cuenta en el panel izquierdo los elementos son nombrados como Rectangle 1, Rectangle 2, o Ellipse 1, Ellipse 2… Ellipse 9, etc y quizás tu los quieras llamar music button o player buttons) solo los seleccionas (puede ser dentro directamente en el Frame de diseño o seleccionas las capas en el panel izquierdo) y oprimes Command + R, de esta forma puedes renombrar muchos elementos al tiempo.
