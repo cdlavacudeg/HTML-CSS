@@ -1,0 +1,34 @@
+:root{
+    /*Colores*/
+    --warmBlack: #454545;
+    --white: #FFFFFF;
+    --light-black: #797676;
+    --gradient-black: linear-gradient(145deg, #939393 10.24%, rgba(174, 174, 174, 0) 92.43%);
+    --gray: #AEAEAECC;
+    --light-gray: #C4C4C4;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Jost', sans-serif;
+}
+
+body{
+    background-color: var(--warmBlack);
+    font-size: 1.6rem;
+    display: grid;
+    grid-template-rows:78px 262px auto auto;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+}
