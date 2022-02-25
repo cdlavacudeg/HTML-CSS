@@ -7,7 +7,7 @@
     <title>Document</title>
     <style>
         body{
-            margin: 5%;
+            margin: 0;
         }
         .circle{
             background-color: #0093E9;
@@ -41,9 +41,111 @@
         .square-rotate:hover{
             transform: rotate(45deg);
         }
+        /* transform origin */
+        .square-rotate-origin{
+            transform-origin: center bottom;
+        }
+
+        /* transform 3D */
+        .container{
+            position: relative;
+            width:100px;
+            height: 100px;
+            border: 5px solid hotpink;
+            perspective: 100px;
+        }
+        .item{
+            position: absolute;
+            width:100px;
+            height: 100px;
+            background: papayawhip;
+            border: 3px solid hotpink;
+            opacity: 0.5;
+            transform-style: preserve-3d;
+            transform-origin: center bottom;
+            transform: rotateX(60deg);
+        }
+        /* Backface visibility */
+        .card{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            transform-style: preserve-3d;
+        }
+        .card:hover{
+            transform: rotateX(180deg);
+        }
+        .face{
+            position: absolute;
+            border-radius: 20px;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+        .face.front{
+            background: pink;
+        }
+        .face.back{
+            background: papayawhip;
+            transform: rotateX(180deg);
+        }
+        /* Parallax */
+        .parallax-container{
+            width: 100%;
+            height: 100vh;
+            perspective: 8px;
+            perspective-origin: 50%;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            position: relative;
+        }
+        .image{
+            position: absolute;
+            left:0;
+            right: 0;
+            margin: 0 auto;
+            transform: 0 50%;
+        }
+        .image--background{
+            height: auto;
+            width: 100%;
+            transform: translateZ(0px) scale(1);
+            transform-origin: 0 50%;
+        }
+        .image--middle{
+            height: 100%;
+            width: 100%;
+            transform: translateZ(5px) scale(0.375);
+            transform-origin: 50%;
+        }
+        .image--foreground{
+            transform: translateZ(2px) scale(0.75);
+            transform-origin: 50%;
+        }
+        .card--p{
+            position: absolute;
+            background: white;
+            border-radius: 8px;
+            width: 80px;
+            height: 100px;
+            transform: rotate(-20px);
+        }
+        .one{
+            left: 30%;
+        }
+        .two{
+            right: 20%;
+            top:200px;
+        }
+        .three{
+            right: 20%;
+            bottom: -700px;
+        }
     </style>
 </head>
 <body>
+    <h1>Transform 2D</h1>
+
     <h2>Translate</h2>
     <div class="shadow">
         <div class="circle"></div>
@@ -58,5 +160,37 @@
 
     <h2>Rotate</h2>
     <div class="circle square-rotate"></div>
+
+    <h2>Rotate transform-origin</h2>
+    <div class="circle square-rotate square-rotate-origin"></div>
+
+    <h1>Transform 3D</h1>
+    <h2>Transform-style</h2>
+    <div class="container">
+        <div class="item">
+
+        </div>
+    </div>
+
+    <h2>Backface visibility</h2>
+    <div class="card">
+        <div class="face front"></div>
+        <div class="face back"></div>
+    </div>
+
+    <h1>Parallax</h1>
+    <div class="parrallax-container">
+        <div class="image image--background">
+            <img src="https://i.ibb.co/jbLKgvX/Background.png" alt="background">
+        </div>
+        <div class="image image--middle">
+            <div class="card--p one"></div>
+            <div class="card--p two"></div>
+            <div class="card--p three"></div>
+        </div>
+        <div class="image image--foreground">
+            <img src="https://i.ibb.co/vJdbRkj/Alice.png" alt="Alice">
+        </div>
+    </div>
 </body>
 </html>
