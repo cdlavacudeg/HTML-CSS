@@ -15,4 +15,5 @@
 - [CSS Gradients](https://cssgradient.io/gradient-backgrounds/)
 - [Proceso de renderizado](https://csstriggers.com/)
 - [CSS engine](https://hacks.mozilla.org/2017/08/Inside-a-super-fast-css-engine-quantum-css-aka-stylo/)
-
+- [Preferencias de movimiento reducido](https://static.platzi.com/media/public/uploads/preferencias-de-movimiento-reducido_3b7e4d6c-9145-4f8a-8303-ee873395a227.html)
+- [Designing Interface Animation](https://valhead.com/)
