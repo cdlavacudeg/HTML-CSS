@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle{
+            background: plum;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            transition: transform 1.5s linear; /*Tiempo adicional al devolverse*/
+        }
+        .circle:hover{
+            transform: translateX(200px);
+            transition: transform 1s linear;
+        }
+        /* tiempos de espera */
+        body{
+            margin: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        .nav{
+            display: flex;
+            justify-content: space-around;
+        }
+        .nav li ul{
+            display: block;
+            opacity: 0;
+            position: absolute;
+            transition: opacity 400ms;
+            transition-delay: 300ms;
+        }
+        
+        .nav li:hover > ul{
+            opacity: 1;
+            transition: opacity 400ms;
+            transition-delay: 300ms;
+        }
+        .nav li ul li{
+            position: relative;
+            right: -80px;
+        }
+        /* Parpadeo */
+        .circle2{
+            background: palevioletred;
+            border-radius: 50px;
+            width: 100px;
+            height: 100px;
+        }
+        .container:hover .circle2{
+            transform: translateY(-20px);
+        }
+    </style>
+</head>
+<body>
+    <h1>Movimiento impulsado por la acción</h1>
+    <div class="circle">
+
+    </div>
+
+    <h1>Tiempos de espera</h1>
+    <ul class="nav">
+        <li><a href="/">Mujer</a>
+            <ul>
+                <li><a href="/">Camiseta</a></li>
+                <li><a href="/">Pantalones</a></li>
+                <li><a href="/">Shorts</a>
+                    <ul>
+                        <li><a href="/">Cortos</a></li>
+                        <li><a href="/">Largos</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="/">Hombre</a></li>
+        <li><a href="/">Niños</a></li>
+    </ul>
+
+    <h1>Problemas de parpadeo</h1>
+    <div class="container">
+        <div class="circle2"></div>
+    </div>
+</body>
+</html>
